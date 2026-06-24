@@ -6,72 +6,56 @@
     <title>Document</title>
     <style>
       .nav-container {
+        width: 930px;
         height: 50px;
-        wedth: 900px;
-        display: flex; /* Activates flexbox layout */
-        justify-content: space-between; /* Pushes items to left, center, and right */
-        align-items: center; /* Aligns them vertically in the middle */
-        background-color: magenta; /* Matches your background color */
-        padding: 10px;
+        display: flex;
+        background: magenta;
       }
 
-      /* Background colors from your screenshot */
-      .home-box {
-        hight: 50;
-        wedth: 200px;
-        background-color: yellow;
-      }
-
-      .about-box {
-        hight: 50px;
-        wedth: 300px;
-        background-color: white;
-      }
-
+      .home-box,
+      .about-box,
       .curse-box {
-        hight: 50px;
-        wedth: 400px;
-        background-color: teal;
-        color: white;
+        flex: 1; /* equal width */
+        height: 50px;
       }
       .welcome-box {
-        hight: 100px;
-        wedth: 900px;
+        height: 100px;
+        width: 930px;
         background-color: cyan;
         color: black;
         text-align: center;
       }
-      .llp-box {
-        hight: 50px;
-        wedth: 900px;
-        background-color: orange;
-        color: white;
-        float: left;
+      .row3 {
+        width: 930px;
+        display: flex;
       }
-      .ws-box {
-        hight: 50px;
-        wedth: 500px;
-        background-color: purple;
+      .llp,
+      .ws {
+        flex: 1; /* Equal width */
+        height: 50px;
+      }
+      .llp {
+        background: bisque;
+      }
+      .ws {
+        background: brown;
         color: white;
-        float: left;
       }
     </style>
   </head>
   <body>
     <div>
       <div class="nav-container">
-        <div class="box home-box">home</div>
-        <div class="box about-box">about</div>
-        <div class="box curse-box">Curse</div>
+        <div class="box home-box" text-align="center">home</div>
+        <div class="box about-box" text-align="center">about</div>
+        <div class="box curse-box" text-align="center">Curse</div>
       </div>
       <div>
         <div class="box welcome-box">Welcome</div>
       </div>
-    </div>
-    <div>
-      <div>
-        <div class="box llp-box">llp</div>
-        <div class="box ws-box">ws</div>
+      <div class="row3">
+        <div class="llp">llp</div>
+        <div class="ws">ws</div>
       </div>
     </div>
   </body>
