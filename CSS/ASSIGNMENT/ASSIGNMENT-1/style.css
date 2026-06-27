@@ -1,61 +1,9 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.text h1 {
+  font-family: Arial;
+  text-transform: uppercase;
 }
 
-body {
-  min-height: 100vh;
-
-  display: flex;
-
-  justify-content: center;
-
-  align-items: center;
-
-  background-color: rgba(135, 47, 47, 0.1);
-}
-
-.container {
-  width: 900px;
-
-  height: 500px;
-
-  padding: 50px;
-
-  border: 5px solid black;
-
-  border-radius: 20px;
-
-  /* Background Image */
-
-  background-image: url("images/logo.png");
-
-  /* Image Control */
-
-  background-repeat: no-repeat;
-
-  background-attachment: fixed;
-
-  background-size: contain;
-
-  background-position: center;
-
-  /* Transparency */
-
-  opacity: 0.8;
-}
-
-h1 {
-  color: rgb(47, 10, 10);
-
-  text-align: center;
-}
-
-p {
-  color: black;
-
-  margin-top: 20px;
-
-  font-family: Arial, sans-serif;
+.text p {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
 }
